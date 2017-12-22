@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-social.css" rel="stylesheet" />
+    <link href="~/Content/star-rating.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-2.1.4.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <script src="~/Scripts/star-rating.js"></script>
+    <script src="~/Scripts/jqDropDown.js"></script>
+    @*<style>
+        .navbar{
+            border-radius:0;
+            border:0;
+        }
+        body{
+            padding-top:70px;
+        }
+    </style>*@
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                @Html.ActionLink("IFIND", "Index", "Home", new { area = "Common" }, new { @class = "navbar-brand" })
+                
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+
+                    <li>@Html.ActionLink("Home", "Index", new { Controller = "Home", Area = "Common" })</li>
+                </ul>
+
+                <ul class="nav navbar-nav  navbar-collapse pull-right">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li><a href="">@User.Identity.Name</a></li>
+                        <li>@Html.ActionLink("SignOut", "SignOut", new { Controller = "Login", Area = "Security" })</li>
+                    }
+                    else
+                    {
+                        <li>@Html.ActionLink("Login", "Index", new { Controller = "Login", Area = "Security" })</li>
+                        <li>@Html.ActionLink("Register", "Index", new { Controller = "Register", Area = "Security" })</li>
+                    }
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            @*<p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>*@
+            <div class="site-links">
+                <div class="inner-footer">
+                    <div class="lower-left">
+                        <span class="copyright">© 2015 lynda.com, Inc.</span>
+
+                        <a href="http://www.lynda.com/sitemap" data-qa="link-site-map">Site Map</a>
+                        <a href="https://www.lynda.com/partners">Partner Program</a>
+                        <a href="http://www.lynda.com/aboutus/otl-privacy.aspx" data-qa="link-privacy-policy">Privacy Policy</a>
+
+                        <a href="http://www.lynda.com/aboutus/website-use-policy" data-qa="link-website-use">Website Use Policy</a>
+
+                    </div>
+                    <div class="lower-right">
+                        <a id="nav-logo" rel="home" title="lynda.com" href="http://www.lynda.com/" data-qa="footer-logo">
+                            <i class="lyndacon lynda-linkedin-logo ldc-logo"></i>
+                            <span class="sr-only">lynda.com | a linkedin company</span>
+                        </a>
+                        <div class="back-to-top"></div>
+                    </div>
+                    <div class="clear">&nbsp;</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/ConfirmDelete.js"></script>
+
+    @*prevent right click in the page*@
+    @*<script type="text/javascript">
+        $(function () {
+            $(this).on("contextmenu", function () {
+                return false;
+            });
+        });
+        </script>*@
+
+</body>
+</html>

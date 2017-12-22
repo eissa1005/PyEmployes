@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/bootstrap-rtl.css" rel="stylesheet" />
+    <link href="~/css/bootstrap-rtl.min.css" rel="stylesheet" />
+    <link href="~/css/innerpage.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @*@Html.ActionLink("FkRA", "Index", "Home", new { Area = "Common" }, new { @class = "navbar-brand" })*@
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+
+                        <li>@Html.ActionLink("الرئيسية", "Index", new { Controller = "Home", Area = "Common" })</li>
+
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            if (User.IsInRole("A"))
+                            {
+
+                                <li>@Html.ActionLink("بيانات الموظفين", "Index", new { Controller = "Employees", Area = "Admin" })</li>
+                                <li>@Html.ActionLink("عرض جميع المستخدمين", "Index", new { Controller = "ListUsers", Area = "Admin" })</li>
+                                <li>@Html.ActionLink("عرض جميع الموظقين", "Index", new { Controller = "ListEmployees", Area = "Admin" })</li>
+                                <li>@Html.ActionLink("الاستعلامات", "Index", new { Controller = "Query", Area = "Admin" })</li>
+
+                            }
+                            if (User.IsInRole("A") || (User.IsInRole("U")))
+                            {
+                                <li>@Html.ActionLink("تسجيل الحضوروالانصراف", "Index", new { Controller = "PyInOut", Area = "Users" })</li>
+                                <li>@Html.ActionLink("خروج", "SignOut", new { Controller = "Login", Area = "Security" })</li>
+                                <li><a href="#">   مرحبا @User.Identity.Name </a></li>
+                            }
+                        }
+                        else
+                        {
+                            <li>@Html.ActionLink("مستخدم جديد", "Index", new { Controller = "Register", Area = "Security" })</li>
+                            <li>@Html.ActionLink("دخول", "Index", new { Controller = "Login", Area = "Security" })</li>
+                        }
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <blockquote class="pull-right">
+                <p> My Saying  goes here </p>
+            </blockquote>
+            <p> Copy Right &copy;@DateTime.Now.Year - Fekra Soft </p>
+        </footer>
+    </div>
+</body>
+</html>

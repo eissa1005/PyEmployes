@@ -1,0 +1,70 @@
+﻿@model BOL.tbl_User
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/js/login.js"></script>
+
+
+
+<script src="~/Scripts/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.close').click(function () {
+            $('#alert').hide();
+        });
+    });
+</script>
+
+@if (TempData["msg"] != null)
+{
+    <div class="alert alert-dismissable alert-info" id="alert">
+        <button type="button" class="close" data-dissmiss="alert">x</button>
+        @TempData["msg"].ToString()
+    </div>
+}
+
+@using (Html.BeginForm("SignIn", "Login", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <hr />
+
+    <div class="row">
+        <div class="col-md-8">
+            <section id="loginForm" class="fa-pull-right">
+                <div class="form-horizontal">
+                    <img src="~/img/logform.png" class="icon-bar" />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group">
+                        @Html.Label("User Name", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-5">
+                            @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.Label("Password", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-5">
+                            @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-push-8">
+                            &nbsp;&nbsp;&nbsp;<input type="submit" id="login" value="login" class="btn btn-default  fa-pull-left" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+
+
+
+
+}
+
+

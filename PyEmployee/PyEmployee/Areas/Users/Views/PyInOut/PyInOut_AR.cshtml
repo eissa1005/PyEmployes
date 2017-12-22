@@ -1,0 +1,118 @@
+﻿@model BOL.tbl_PyInOut
+
+@{
+    if (Session["Lang"].ToString() != null || Session["Lang"].ToString() != "")
+    {
+        string Lang = Session["Lang"].ToString();
+
+
+        if (Lang == "Ar")
+        {
+            Layout = "~/Views/Shared/_Layout_AR.cshtml";
+        }
+
+        else
+        {
+            Layout = "~/Views/Shared/_Layout.cshtml";
+        }
+    }
+
+}
+<br />
+<br />
+@{
+    if (TempData["msg"] != null)
+    {
+        <div class="alert alert-dismissable alert-info" id="alert">
+            <button type="button" class="close" data-dissmiss="alert">x</button>
+            @TempData["msg"].ToString()
+        </div>
+    }
+
+}
+
+
+<link href="~/css/bootstrap-rtl.css" rel="stylesheet" />
+<link href="~/css/bootstrap-rtl.min.css" rel="stylesheet" />
+<link href="~/css/innerpage.css" rel="stylesheet" />
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/jquery-2.1.4.min.js"></script>
+<link href="~/css/bootstrap-datepicker.css" rel="stylesheet" />
+<link href="~/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+<script src="~/js/bootstrap-datepicker.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.close').click(function () {
+            $('#alert').fadeToggle(1000);
+        });
+    });
+
+    // Start JQuery
+    $(document).ready(function () {
+        $('#EmployeeId').change(function (event) {
+            $('#empname').empty();
+            $.get('PyInOut/GetNameById', { id: $('#EmployeeId').val() }, function (data) {
+                $.each(data, function (index, row) {
+                    $('#empname').append("<option value='" + row.EmployeeId + "'>" + row.Employee_Name + "</option>");
+                });
+            });
+
+        });
+    });
+</script>
+@using (Html.BeginForm("Create", "PyInOut",FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <h4>سجل الحضور والانصراف</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.Label("رقم الموظف", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-5">
+                @Html.DropDownListFor(p => p.EmployeeId, @ViewBag.EmployeeId as SelectList, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.EmployeeId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("اسم الموظف", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-5">
+                <select id="empname" class="form-control"></select>
+                @Html.ValidationMessageFor(model => model.tbl_Employees.Employee_Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("تاريخ اليوم", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-5">
+                @Html.TextBoxFor(model => Model.DT, new { id = "datetimepicker5", @value = DateTime.Now, @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.DT, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("وقت الحضور", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-5">
+                @Html.EditorFor(model => model.Start_IN, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Start_IN, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("وقت الانصراف", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-5">
+                @Html.EditorFor(model => model.Out_IN, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Out_IN, "", new { @class = "text-danger" })
+            </div>
+
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="إضافة" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+

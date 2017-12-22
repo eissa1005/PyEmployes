@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PYEmployeesModelStoreContainer" CdmEntityContainer="PYEmployeesEntities">
+    <EntitySetMapping Name="tbl_Employees">
+      <EntityTypeMapping TypeName="PYEmployeesModel.tbl_Employees">
+        <MappingFragment StoreEntitySet="tbl_Employees">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="Employee_Name" ColumnName="Employee_Name" />
+          <ScalarProperty Name="Guarantor" ColumnName="Guarantor" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="EmplyeeImg" ColumnName="EmplyeeImg" />
+          <ScalarProperty Name="HireDate" ColumnName="HireDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PyInOut">
+      <EntityTypeMapping TypeName="PYEmployeesModel.tbl_PyInOut">
+        <MappingFragment StoreEntitySet="tbl_PyInOut">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="DT" ColumnName="DT" />
+          <ScalarProperty Name="Start_IN" ColumnName="Start_IN" />
+          <ScalarProperty Name="Out_IN" ColumnName="Out_IN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

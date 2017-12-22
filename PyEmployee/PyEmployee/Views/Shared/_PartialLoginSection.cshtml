@@ -1,0 +1,69 @@
+﻿@*@model BOL.tbl_User*@
+
+@using (Html.BeginForm("Login", "Login", new { area = "Security" }, FormMethod.Post))
+@*@using (Ajax.BeginForm("Login", "Login", new AjaxOptions { UpdateTargetId = "login" }))*@
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <!--Login Modal-->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <div class=" container">
+                <div class="row">
+                    <div class="form-signin mg-btm">
+                        <h3 class="heading-desc">
+                            <button type="button" class="close pull-right" aria-hidden="true" data-dismiss="modal">×</button>
+                            Login to Ifind
+                        </h3>
+                        <div class="social-box">
+                            <div class="row mg-btm">
+                                <div class="col-md-12">
+                                    <a href="~/Security/Login/ExternalLogin?provider=facebook" class="btn btn-facebook btn-block"><i id="f3" class="fa fa-facebook"></i> | Connect with Facebook</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <a onclick="checkLoginState();" id="f1" class="btn btn-twitter btn-block"><i id="f3" class="fa fa-twitter"></i> | Connect with Twitter</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main">
+
+
+                            @Html.Editor("", new { htmlAttributes = new { @class = "form-control", @placeholder = "Email" } })
+                            @Html.ValidationMessage("", "", new { @class = "text-danger" })
+
+                            @*@Html.PasswordFor(model => model.Password, new { htmlAttributes = new { value = Model.Password, @class = "form-control" } })*@
+                            @Html.Editor("", new { htmlAttributes = new { @class = "form-control", @placeholder = "Password", @type = "password" } })
+                            @Html.ValidationMessage("", "", new { @class = "text-danger" })
+
+
+                            @*<input type="text" class="form-control" placeholder="Email" autofocus>
+                                <input type="password" class="form-control" placeholder="Password">*@
+
+                            <span class="clearfix"></span>
+                        </div>
+                        <div class="login-footer">
+                            <div class="row">
+                                <div class="col-xs-6 col-md-6">
+                                    <div class="left-section">
+                                        <a href="~/Security/Register">Sign up now</a>
+
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-md-6 pull-right">
+                                    <button type="submit" class="btn btn-large btn-danger pull-right">Login</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div><!--Login Modal End-->
+
+}

@@ -1,0 +1,169 @@
+﻿.test{
+     background-color:red; font-family:Arial;
+}
+
+
+
+/* Set padding to keep content from hitting the edges */
+/*.body-content {
+    padding-left: 0;
+    padding-right: 0;
+    
+    
+}*/
+
+
+/* Set width on the form input elements since they're 100% wide by default */
+/*input,
+select,
+textarea {
+    max-width: 280px;
+}*/
+
+/*@media screen and (max-width: 768px){
+
+  *[class*='col-xs']{
+    background:blue;
+    padding-left:20px;
+    padding:50px;
+  }
+
+}*/
+
+/*@media (min-width: 360px) {
+    .container {
+        width: 310px;
+    }
+
+    body {
+        padding-top: 120px;
+        padding-bottom: 20px;
+    }
+     li {
+                margin: 5px;
+            }
+
+     .body-content {
+    padding-left: 8px;
+    padding-right: 8px;
+     }
+}*/
+
+@media (min-width: 320px) {
+    .container {
+        width: 277px;
+    }
+
+    body {
+        padding-top: 120px;
+        padding-bottom: 20px;
+    }
+     li {
+                margin: 10px;
+            }
+
+     .body-content {
+    padding-left: 0;
+    padding-right: 0;
+     }
+}
+
+
+
+/*@media (min-width: 414px) {
+    .container {
+        width: 366px;
+    }
+
+    body {
+        padding-top: 120px;
+        padding-bottom: 20px;
+    }
+     li {
+                margin: 5px;
+            }
+
+     .body-content {
+    padding-left: 0;
+    padding-right: 0;
+     }
+}*/
+
+/*@media (min-width: 480px) {
+    .container {
+        width: 450px;
+    }
+
+    body {
+        padding-top: 120px;
+        padding-bottom: 20px;
+    }
+     li {
+                margin: 5px;
+            }
+
+     .body-content {
+    padding-left: 0;
+    padding-right: 0;
+     }
+
+    .loc-mob-details {
+        font-size:12px;
+    }
+}*/
+
+@media (min-width: 960px) {
+
+    .container {
+        width: 940px;
+    }
+
+    body {
+        padding-top: 120px;
+        padding-bottom: 20px;
+    }
+     li {
+                margin: 10px;
+            }
+
+     .body-content {
+    padding-left: 0;
+    padding-right: 0;
+     }
+}
+
+@media (min-width: 980px) {
+    .container {
+        width: 400px;
+        
+    }
+    .rest-details{
+        padding-left:0;
+    }
+    
+
+    body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    li {
+        margin: 11px;
+    }
+    .side-buttons {
+        padding-top:30px;
+    }
+
+
+    
+}
+
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:4px !important; 
+    padding-bottom:0 !important;
+    height: 28px;
+}
+.navbar {min-height:28px !important;}
+

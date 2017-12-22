@@ -1,0 +1,15 @@
+﻿.home-container{
+    background-color:#e6dcdc;
+    padding-top:30px;
+}
+
+.panel-places{
+    max-height: 550px;
+    overflow-y: scroll;
+}
+
+textarea{
+    resize:none;
+    font-family:sans-serif;
+    background-color:#d7cbcb;
+}

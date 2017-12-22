@@ -1,0 +1,143 @@
+﻿<!--
+
+
+Slidebars CSS -->
+.sb-menu li {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-open-right, .sb-close {
+    cursor: pointer;
+}
+
+
+
+.navbar .sb-toggle-left {
+    width: 58px;
+    float: left;
+    padding: 14px;
+}
+
+
+.navbar-default {
+    background-color: #FF3971;
+}
+
+.navicon-line {
+    width: 24px;
+    height: 4px;
+    border-radius: 1px;
+    margin-bottom: 3px;
+    background-color: #fff;
+}
+
+.sb-slidebar, .sb-slidebar h3 {
+    color: #F0F0F0;
+}
+
+.sb-slidebar {
+    background-color: #222222;
+    color: #e8e8e8;
+}
+
+.sb-slidebar {
+    background-color: #222222;
+}
+
+.sb-left .sb-menu li a {
+    border-left: 3px solid transparent;
+}
+
+
+
+.sb-menu li a {
+    width: 100%;
+    display: inline-block;
+    padding: 1em;
+    color: #f2f2f2;
+}
+
+.sb-left .sb-menu li a:hover {
+    background-color: #FF3971;
+}
+
+.sb-slidebar a {
+    color: #FF3971;
+    text-decoration: none;
+}
+
+.navbar {
+    box-shadow: /* Shadow beneath the bar and edge highlights. */ /* Layered single pixel shadows to create a one sided shadow effect. */ 0 5px 0 0 rgba(0, 0, 0, 0.01), 0 4px 0 0 rgba(0, 0, 0, 0.02), 0 3px 0 0 rgba(0, 0, 0, 0.04), 0 2px 0 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.08), /* Top highlight */ 0 1px 0 0 rgba(255, 255, 255, 0.1) inset, /* Left highlight */ 1px 0 0 0 rgba(255, 255, 255, 0.1) inset, /* Right highlight */ -1px 0 0 0 rgba(255, 255, 255, 0.1) inset, /* Bottom lowlight */ 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset;
+    background-image: -webkit-linear-gradient(top, rgba(255,255,255, 0.05) 50%, rgba(0,0,0, 0.02) 51%);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 50%, rgba(0, 0, 0, 0.02) 51%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    width: 100%;
+    left: auto;
+    right: auto;
+}
+
+.sb-menu {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#sb-site {
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.3);
+    padding: 50px 0 30px 0;
+    padding-left: 70px;
+}
+
+
+/**  Footer **/
+
+footer {
+    background: #222222;
+    color: white;
+    font-size: .8em;
+    padding: 20px 0 40px 0;
+}
+
+    footer a {
+        color: #E0E6AE;
+    }
+
+        footer a:hover {
+            color: #EEC856 !important;
+        }
+
+    footer .phone {
+        font-size: 1.4em;
+        font-weight: 700;
+        color: #E0E6AE;
+    }
+
+    footer .navbar {
+        margin-bottom: 0;
+        min-height: 0;
+    }
+
+    footer .navbar-default {
+        background-color: transparent;
+        border: none;
+        margin-right: 40px;
+    }
+
+    footer .navbar-nav > li a {
+        padding-top: 0;
+        padding-bottom: 0;
+        text-decoration: underline;
+        color: #EEC856 !important;
+    }
+
+
+
+/*container*/ .cont {
+    padding-top: 70px;
+}

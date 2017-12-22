@@ -1,0 +1,80 @@
+﻿@model IEnumerable<BOL.tbl_PyInOut>
+@{
+    try
+    {
+        if (Session["Lang"] != null || Session["Lang"].ToString() != "")
+        {
+            string Lang = Session["Lang"].ToString();
+
+
+            if (Lang == "Ar")
+            {
+                Layout = "~/Views/Shared/_Layout_AR.cshtml";
+            }
+
+            else
+            {
+                Layout = "~/Views/Shared/_Layout.cshtml";
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+        
+    }
+
+
+}
+
+
+
+<h2><b>نتائج الاستعلام</b></h2>
+<hr />
+<div>
+    @Html.ActionLink("الرجوع للاستعلامات", "Index", "Query", new { @class = "btn btn-primary col-md-2" })
+</div>
+<br />
+<br />
+@Html.ActionLink("طباعة التقرير", "Search", new { PDF = "PDF" })
+
+<table class="table table-striped table-bordered">
+    <tr>
+        <th>
+            @Html.ActionLink("رقم الموظف", "Search", new { SortOrder = (ViewBag.SortOrder == null ? "ASC" : (ViewBag.SortOrder == "ASC" ? "Desc" : "ASC")), SortBy = "EmployeeId" })
+        </th>
+        <th>
+            @Html.ActionLink("اسم الموظف", "Search", new { SortOrder = (ViewBag.SortOrder == null ? "ASC" : (ViewBag.SortOrder == "ASC" ? "Desc" : "ASC")), SortBy = "Employee_Name" })
+        </th>
+        <th>
+            @Html.ActionLink("التاريخ", "Search", new { SortOrder = (ViewBag.SortOrder == null ? "ASC" : (ViewBag.SortOrder == "ASC" ? "Desc" : "ASC")), SortBy = "DT" })
+        </th>
+        <th>
+            @Html.ActionLink("ساعة الحضور", "Search", new { SortOrder = (ViewBag.SortOrder == null ? "ASC" : (ViewBag.SortOrder == "ASC" ? "Desc" : "ASC")), SortBy = "Start_IN" })
+        </th>
+        <th>
+            @Html.ActionLink("ساعة الانصراف", "Search", new { SortOrder = (ViewBag.SortOrder == null ? "ASC" : (ViewBag.SortOrder == "ASC" ? "Desc" : "ASC")), SortBy = "Out_IN" })
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployeeId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tbl_Employees.Employee_Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Start_IN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Out_IN)
+            </td>
+        </tr>
+    }
+
+</table>

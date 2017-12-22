@@ -1,0 +1,87 @@
+﻿@model  BOL.tbl_PyInOut
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/Scripts/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+
+</script>
+
+
+<h2>Query Employees</h2>
+
+@using (Html.BeginForm("Search", "Query",FormMethod.Post))
+{
+    <hr />
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div class="row">
+                @Html.Label("Employee ID", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-4 col-md-4">
+                    @Html.Editor("EmployeeId", new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.EmployeeId, "", new { @class = "text-danger" })
+                </div>
+
+                @Html.Label("Employee Name", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-4 col-md-4">
+                    @Html.Editor("Employee_Name", new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.tbl_Employees.Employee_Name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="row">
+                @Html.Label("From Date", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-4 col-md-4">
+                    @Html.Editor("FDT", new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.DT, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-To">
+                    @Html.Label("To Date", htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-4 col-md-4">
+                        @Html.Editor("TDT", new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.DT, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                @Html.Label("Start_In", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-4 col-md-4">
+                    @Html.Editor("Start_IN", new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Start_IN, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-To">
+                    @Html.Label("Out_Of", htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-4 col-md-4">
+                        @Html.Editor("Out_IN", new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Out_IN, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-5 col-md-push-3">
+                    <input type="submit" value="Search" id="Search" name="Search" class="btn btn-default col-lg-3" />
+                    @*@Html.ActionLink("Search", "Search", new { Controller = "Query", Area = "Admin", Mode = "Search" }, new { @class = "btn btn-danger col-lg-4" })*@
+
+                </div>
+
+                <div class="col-md-5 col-md-push-3">
+                    <input type="submit" value="Report" id="Report" class="btn btn-default col-lg-3" />
+
+                   @* @Html.ActionLink("Report", "Search", new { Controller = "Query", Area = "Admin", Mode = "Report", Rpt = "Rpt" }, new { @class = "btn btn-danger col-lg-4" })*@
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+}

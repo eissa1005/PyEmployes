@@ -1,0 +1,53 @@
+﻿@model IEnumerable<BOL.tbl_PyInOut>
+@using GridMvc.Html;
+
+@{
+    try
+    {
+        if (Session["Lang"] != null || Session["Lang"].ToString() != "")
+        {
+            string Lang = Session["Lang"].ToString();
+
+
+            if (Lang == "Ar")
+            {
+                Layout = "~/Views/Shared/_Layout_AR.cshtml";
+            }
+
+            else
+            {
+                Layout = "~/Views/Shared/_Layout.cshtml";
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+
+    }
+
+
+}
+
+<link href="~/css/bootstrap-rtl.css" rel="stylesheet" />
+<link href="~/css/bootstrap-rtl.min.css" rel="stylesheet" />
+<link href="~/css/innerpage.css" rel="stylesheet" />
+<script src="~/Scripts/gridmvc.js"></script>
+<link href="~/Content/Gridmvc.css" rel="stylesheet" />
+<script src="~/Scripts/gridmvc.min.js"></script>
+<script src="~/Scripts/gridmvc.lang.ru.js"></script>
+<script src="~/Scripts/jquery-2.1.4.min.js"></script>
+
+<h2>نتائج الاستعلام</h2>
+<hr />
+<br />
+
+@Html.ActionLink("'طباعه التقرير ", "Search", new { PDF = "PDF" })
+
+@Html.Grid(Model).Columns(columns =>{
+    columns.Add(foo => foo.EmployeeId).Titled("رقم الموظف").SetWidth(100).Sortable(true).Filterable(true);
+    columns.Add(foo => foo.tbl_Employees.Employee_Name).Titled("اسم الموظف").SetWidth(200).Sortable(true).Filterable(true);
+    columns.Add(foo => foo.DT).Titled("التاريخ").SetWidth(100).Sortable(true).Filterable(true);
+    columns.Add(foo => foo.Start_IN).Titled("ساعة الحضور").SetWidth(100).Sortable(true);
+    columns.Add(foo => foo.Out_IN).Titled("ساعة الانصراف").SetWidth(100).Sortable(true);
+}).WithPaging(6);
+

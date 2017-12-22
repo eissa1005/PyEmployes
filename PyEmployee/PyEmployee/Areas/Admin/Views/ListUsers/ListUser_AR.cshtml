@@ -1,0 +1,81 @@
+﻿@model IEnumerable<BOL.tbl_User>
+
+@{
+    try
+    {
+        if (Session["Lang"] != null && Session["Lang"].ToString() != "")
+        {
+            string Lang = Session["Lang"].ToString();
+
+
+            if (Lang == "Ar")
+            {
+                Layout = "~/Views/Shared/_Layout_AR.cshtml";
+            }
+
+            else
+            {
+                Layout = "~/Views/Shared/_Layout.cshtml";
+            }
+        }
+    }
+    catch (Exception)
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+
+}
+
+
+
+<link href="~/css/bootstrap-rtl.css" rel="stylesheet" />
+<link href="~/css/bootstrap-rtl.min.css" rel="stylesheet" />
+<link href="~/css/innerpage.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-2.1.4.min.js"></script>
+
+<h2>قائمة المستخدمين</h2>
+<table class="table table-striped table-bordered table-hover">
+    <tr class="info">
+        <th>
+            @Html.ActionLink("اسم المستخدم", "Index", new { SortOrder = (ViewBag.SortOrder == null ? "ASC" : (ViewBag.SortOrder == "ASC" ? "Desc" : "ASC")), SortBy = "UserName" })
+        </th>
+
+        <th>
+            @Html.ActionLink("الصلاحية", "Index", new { SortOrder = (ViewBag.SortOrder == null ? "ASC" : (ViewBag.SortOrder == "ASC" ? "Desc" : "ASC")), SortBy = "Role" })
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Role)
+            </td>
+        </tr>
+    }
+
+</table>
+@{
+    double page = ViewBag.TotalPages;
+}
+<ul class="pagination">
+    @for (int i = 1; i <= page; i++)
+    {
+       
+            if (i == ViewBag.TotalPages)
+            {
+                <li>@Html.ActionLink(i.ToString() + " ", "index", new { SortOrder = (ViewBag.SortOrder == null ? "ASC" : "Desc"), SortBy = "UserName", Page = i })</li>
+            }
+            else
+            {
+                <li>@Html.ActionLink(i.ToString() + " ", "index", new { SortOrder = (ViewBag.SortOrder == null ? "ASC" : "Desc"), SortBy = "UserName", Page = i })</li>
+            }
+        
+    }
+
+</ul>

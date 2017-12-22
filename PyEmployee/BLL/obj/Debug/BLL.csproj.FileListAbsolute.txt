@@ -1,0 +1,48 @@
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\BLL\bin\Debug\BLL.dll
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\BLL\bin\Debug\BLL.pdb
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\BLL\bin\Debug\BOL.dll
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\BLL\bin\Debug\DAL.dll
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\BLL\bin\Debug\GridMvc.dll
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\BLL\bin\Debug\EntityFramework.dll
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\BLL\bin\Debug\BOL.pdb
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\BLL\bin\Debug\DAL.pdb
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\BLL\bin\Debug\EntityFramework.xml
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\BLL\obj\Debug\BLL.dll
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\BLL\obj\Debug\BLL.pdb
+M:\eisa\FKRA_Soft\ifindProject 16-9-2015\ifind\BLL\bin\Debug\BLL.dll
+M:\eisa\FKRA_Soft\ifindProject 16-9-2015\ifind\BLL\bin\Debug\BLL.pdb
+M:\eisa\FKRA_Soft\ifindProject 16-9-2015\ifind\BLL\bin\Debug\BOL.dll
+M:\eisa\FKRA_Soft\ifindProject 16-9-2015\ifind\BLL\bin\Debug\DAL.dll
+M:\eisa\FKRA_Soft\ifindProject 16-9-2015\ifind\BLL\bin\Debug\GridMvc.dll
+M:\eisa\FKRA_Soft\ifindProject 16-9-2015\ifind\BLL\bin\Debug\EntityFramework.dll
+M:\eisa\FKRA_Soft\ifindProject 16-9-2015\ifind\BLL\bin\Debug\BOL.pdb
+M:\eisa\FKRA_Soft\ifindProject 16-9-2015\ifind\BLL\bin\Debug\DAL.pdb
+M:\eisa\FKRA_Soft\ifindProject 16-9-2015\ifind\BLL\bin\Debug\EntityFramework.xml
+M:\eisa\FKRA_Soft\ifindProject 16-9-2015\ifind\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+M:\eisa\FKRA_Soft\ifindProject 16-9-2015\ifind\BLL\obj\Debug\BLL.dll
+M:\eisa\FKRA_Soft\ifindProject 16-9-2015\ifind\BLL\obj\Debug\BLL.pdb
+M:\eisa\FKRA_Soft\PyEmployee\PyEmployee\BLL\bin\Debug\BLL.dll
+M:\eisa\FKRA_Soft\PyEmployee\PyEmployee\BLL\bin\Debug\BLL.pdb
+M:\eisa\FKRA_Soft\PyEmployee\PyEmployee\BLL\bin\Debug\BOL.dll
+M:\eisa\FKRA_Soft\PyEmployee\PyEmployee\BLL\bin\Debug\DAL.dll
+M:\eisa\FKRA_Soft\PyEmployee\PyEmployee\BLL\bin\Debug\GridMvc.dll
+M:\eisa\FKRA_Soft\PyEmployee\PyEmployee\BLL\bin\Debug\EntityFramework.dll
+M:\eisa\FKRA_Soft\PyEmployee\PyEmployee\BLL\bin\Debug\BOL.pdb
+M:\eisa\FKRA_Soft\PyEmployee\PyEmployee\BLL\bin\Debug\DAL.pdb
+M:\eisa\FKRA_Soft\PyEmployee\PyEmployee\BLL\bin\Debug\EntityFramework.xml
+M:\eisa\FKRA_Soft\PyEmployee\PyEmployee\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+M:\eisa\FKRA_Soft\PyEmployee\PyEmployee\BLL\obj\Debug\BLL.dll
+M:\eisa\FKRA_Soft\PyEmployee\PyEmployee\BLL\obj\Debug\BLL.pdb
+E:\خاص\فكره للبرمجيات\PyEmployee\PyEmployee\BLL\bin\Debug\BLL.dll
+E:\خاص\فكره للبرمجيات\PyEmployee\PyEmployee\BLL\bin\Debug\BLL.pdb
+E:\خاص\فكره للبرمجيات\PyEmployee\PyEmployee\BLL\bin\Debug\BOL.dll
+E:\خاص\فكره للبرمجيات\PyEmployee\PyEmployee\BLL\bin\Debug\DAL.dll
+E:\خاص\فكره للبرمجيات\PyEmployee\PyEmployee\BLL\bin\Debug\GridMvc.dll
+E:\خاص\فكره للبرمجيات\PyEmployee\PyEmployee\BLL\bin\Debug\EntityFramework.dll
+E:\خاص\فكره للبرمجيات\PyEmployee\PyEmployee\BLL\bin\Debug\BOL.pdb
+E:\خاص\فكره للبرمجيات\PyEmployee\PyEmployee\BLL\bin\Debug\DAL.pdb
+E:\خاص\فكره للبرمجيات\PyEmployee\PyEmployee\BLL\bin\Debug\EntityFramework.xml
+E:\خاص\فكره للبرمجيات\PyEmployee\PyEmployee\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+E:\خاص\فكره للبرمجيات\PyEmployee\PyEmployee\BLL\obj\Debug\BLL.dll
+E:\خاص\فكره للبرمجيات\PyEmployee\PyEmployee\BLL\obj\Debug\BLL.pdb

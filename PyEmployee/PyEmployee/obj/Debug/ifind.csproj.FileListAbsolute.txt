@@ -1,0 +1,126 @@
+F:\ifindProject\ifind\ifind\bin\ifind.dll.config
+F:\ifindProject\ifind\ifind\bin\ifind.dll
+F:\ifindProject\ifind\ifind\bin\ifind.pdb
+F:\ifindProject\ifind\ifind\bin\BLL.dll
+F:\ifindProject\ifind\ifind\bin\BOL.dll
+F:\ifindProject\ifind\ifind\bin\DotNetOpenAuth.AspNet.dll
+F:\ifindProject\ifind\ifind\bin\DotNetOpenAuth.Core.dll
+F:\ifindProject\ifind\ifind\bin\DotNetOpenAuth.OAuth.Consumer.dll
+F:\ifindProject\ifind\ifind\bin\DotNetOpenAuth.OAuth.dll
+F:\ifindProject\ifind\ifind\bin\DotNetOpenAuth.OpenId.dll
+F:\ifindProject\ifind\ifind\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+F:\ifindProject\ifind\ifind\bin\EntityFramework.dll
+F:\ifindProject\ifind\ifind\bin\EntityFramework.SqlServer.dll
+F:\ifindProject\ifind\ifind\bin\ImageResizer.dll
+F:\ifindProject\ifind\ifind\bin\ImageResizer.Mvc.dll
+F:\ifindProject\ifind\ifind\bin\Microsoft.AspNet.Identity.Core.dll
+F:\ifindProject\ifind\ifind\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\ifindProject\ifind\ifind\bin\Microsoft.Owin.dll
+F:\ifindProject\ifind\ifind\bin\Microsoft.Owin.Security.dll
+F:\ifindProject\ifind\ifind\bin\Microsoft.Owin.Security.OAuth.dll
+F:\ifindProject\ifind\ifind\bin\Microsoft.Web.WebPages.OAuth.dll
+F:\ifindProject\ifind\ifind\bin\Newtonsoft.Json.dll
+F:\ifindProject\ifind\ifind\bin\Owin.dll
+F:\ifindProject\ifind\ifind\bin\System.Net.Http.Extensions.dll
+F:\ifindProject\ifind\ifind\bin\System.Net.Http.Primitives.dll
+F:\ifindProject\ifind\ifind\bin\System.Web.Helpers.dll
+F:\ifindProject\ifind\ifind\bin\System.Web.Mvc.dll
+F:\ifindProject\ifind\ifind\bin\System.Web.Razor.dll
+F:\ifindProject\ifind\ifind\bin\System.Web.WebPages.Deployment.dll
+F:\ifindProject\ifind\ifind\bin\System.Web.WebPages.dll
+F:\ifindProject\ifind\ifind\bin\System.Web.WebPages.Razor.dll
+F:\ifindProject\ifind\ifind\bin\WebMatrix.Data.dll
+F:\ifindProject\ifind\ifind\bin\WebMatrix.WebData.dll
+F:\ifindProject\ifind\ifind\bin\DAL.dll
+F:\ifindProject\ifind\ifind\bin\Org.Mentalis.Security.Cryptography.dll
+F:\ifindProject\ifind\ifind\bin\Mono.Math.dll
+F:\ifindProject\ifind\ifind\bin\BLL.pdb
+F:\ifindProject\ifind\ifind\bin\BOL.pdb
+F:\ifindProject\ifind\ifind\bin\DotNetOpenAuth.AspNet.xml
+F:\ifindProject\ifind\ifind\bin\DotNetOpenAuth.Core.xml
+F:\ifindProject\ifind\ifind\bin\DotNetOpenAuth.OAuth.xml
+F:\ifindProject\ifind\ifind\bin\DotNetOpenAuth.OAuth.Consumer.xml
+F:\ifindProject\ifind\ifind\bin\DotNetOpenAuth.OpenId.xml
+F:\ifindProject\ifind\ifind\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+F:\ifindProject\ifind\ifind\bin\EntityFramework.xml
+F:\ifindProject\ifind\ifind\bin\EntityFramework.SqlServer.xml
+F:\ifindProject\ifind\ifind\bin\ImageResizer.xml
+F:\ifindProject\ifind\ifind\bin\ImageResizer.Mvc.xml
+F:\ifindProject\ifind\ifind\bin\Microsoft.AspNet.Identity.Core.xml
+F:\ifindProject\ifind\ifind\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\ifindProject\ifind\ifind\bin\Microsoft.Owin.xml
+F:\ifindProject\ifind\ifind\bin\Microsoft.Owin.Security.xml
+F:\ifindProject\ifind\ifind\bin\Microsoft.Owin.Security.OAuth.xml
+F:\ifindProject\ifind\ifind\bin\Microsoft.Web.WebPages.OAuth.xml
+F:\ifindProject\ifind\ifind\bin\Newtonsoft.Json.xml
+F:\ifindProject\ifind\ifind\bin\System.Net.Http.Extensions.xml
+F:\ifindProject\ifind\ifind\bin\System.Net.Http.Primitives.xml
+F:\ifindProject\ifind\ifind\bin\System.Web.Helpers.xml
+F:\ifindProject\ifind\ifind\bin\System.Web.Mvc.xml
+F:\ifindProject\ifind\ifind\bin\System.Web.Razor.xml
+F:\ifindProject\ifind\ifind\bin\System.Web.WebPages.xml
+F:\ifindProject\ifind\ifind\bin\System.Web.WebPages.Deployment.xml
+F:\ifindProject\ifind\ifind\bin\System.Web.WebPages.Razor.xml
+F:\ifindProject\ifind\ifind\bin\WebMatrix.Data.xml
+F:\ifindProject\ifind\ifind\bin\WebMatrix.WebData.xml
+F:\ifindProject\ifind\ifind\bin\DAL.pdb
+F:\ifindProject\ifind\ifind\bin\Org.Mentalis.Security.Cryptography.xml
+F:\ifindProject\ifind\ifind\bin\Mono.Math.xml
+F:\ifindProject\ifind\ifind\obj\Debug\ifind.csproj.App.config
+F:\ifindProject\ifind\ifind\obj\Debug\ifind.csprojResolveAssemblyReference.cache
+F:\ifindProject\ifind\ifind\obj\Debug\ifind.dll
+F:\ifindProject\ifind\ifind\obj\Debug\ifind.pdb
+C:\Users\EISSA\Desktop\ifindProject 16-9-2015\ifind\ifind\bin\ifind.dll.config
+C:\Users\EISSA\Desktop\ifindProject 16-9-2015\ifind\ifind\bin\ifind.dll
+C:\Users\EISSA\Desktop\ifindProject 16-9-2015\ifind\ifind\bin\ifind.pdb
+C:\Users\EISSA\Desktop\ifindProject 16-9-2015\ifind\ifind\bin\BLL.dll
+C:\Users\EISSA\Desktop\ifindProject 16-9-2015\ifind\ifind\bin\BOLL.dll
+C:\Users\EISSA\Desktop\ifindProject 16-9-2015\ifind\ifind\bin\DAL.dll
+C:\Users\EISSA\Desktop\ifindProject 16-9-2015\ifind\ifind\bin\BLL.pdb
+C:\Users\EISSA\Desktop\ifindProject 16-9-2015\ifind\ifind\bin\DAL.pdb
+C:\Users\EISSA\Desktop\ifindProject 16-9-2015\ifind\ifind\bin\BOLL.pdb
+C:\Users\EISSA\Desktop\ifindProject 16-9-2015\ifind\ifind\obj\Debug\ifind.csproj.App.config
+C:\Users\EISSA\Desktop\ifindProject 16-9-2015\ifind\ifind\obj\Debug\ifind.csprojResolveAssemblyReference.cache
+C:\Users\EISSA\Desktop\ifindProject 16-9-2015\ifind\ifind\obj\Debug\ifind.dll
+C:\Users\EISSA\Desktop\ifindProject 16-9-2015\ifind\ifind\obj\Debug\ifind.pdb
+M:\eisa\ifindProject 16-9-2015\ifind\ifind\bin\ifind.dll.config
+M:\eisa\ifindProject 16-9-2015\ifind\ifind\bin\ifind.dll
+M:\eisa\ifindProject 16-9-2015\ifind\ifind\bin\ifind.pdb
+M:\eisa\ifindProject 16-9-2015\ifind\ifind\bin\BLL.dll
+M:\eisa\ifindProject 16-9-2015\ifind\ifind\bin\BOLL.dll
+M:\eisa\ifindProject 16-9-2015\ifind\ifind\bin\DAL.dll
+M:\eisa\ifindProject 16-9-2015\ifind\ifind\bin\BLL.pdb
+M:\eisa\ifindProject 16-9-2015\ifind\ifind\bin\DAL.pdb
+M:\eisa\ifindProject 16-9-2015\ifind\ifind\bin\BOLL.pdb
+M:\eisa\ifindProject 16-9-2015\ifind\ifind\obj\Debug\ifind.csproj.App.config
+M:\eisa\ifindProject 16-9-2015\ifind\ifind\obj\Debug\ifind.csprojResolveAssemblyReference.cache
+M:\eisa\ifindProject 16-9-2015\ifind\ifind\obj\Debug\ifind.dll
+M:\eisa\ifindProject 16-9-2015\ifind\ifind\obj\Debug\ifind.pdb
+E:\Work\ifindProject 16-9-2015\ifind\ifind\bin\ifind.dll.config
+E:\Work\ifindProject 16-9-2015\ifind\ifind\bin\ifind.dll
+E:\Work\ifindProject 16-9-2015\ifind\ifind\bin\ifind.pdb
+E:\Work\ifindProject 16-9-2015\ifind\ifind\bin\BLL.dll
+E:\Work\ifindProject 16-9-2015\ifind\ifind\bin\BOLL.dll
+E:\Work\ifindProject 16-9-2015\ifind\ifind\bin\DAL.dll
+E:\Work\ifindProject 16-9-2015\ifind\ifind\bin\BLL.pdb
+E:\Work\ifindProject 16-9-2015\ifind\ifind\bin\DAL.pdb
+E:\Work\ifindProject 16-9-2015\ifind\ifind\bin\BOLL.pdb
+E:\Work\ifindProject 16-9-2015\ifind\ifind\obj\Debug\ifind.csproj.App.config
+E:\Work\ifindProject 16-9-2015\ifind\ifind\obj\Debug\ifind.csprojResolveAssemblyReference.cache
+E:\Work\ifindProject 16-9-2015\ifind\ifind\obj\Debug\ifind.dll
+E:\Work\ifindProject 16-9-2015\ifind\ifind\obj\Debug\ifind.pdb
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\ifind\bin\ifind.dll.config
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\ifind\bin\ifind.dll
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\ifind\bin\ifind.pdb
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\ifind\bin\BOL.dll
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\ifind\bin\DAL.dll
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\ifind\bin\GridMvc.dll
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\ifind\bin\BOL.pdb
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\ifind\bin\DAL.pdb
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\ifind\obj\Debug\ifind.csproj.App.config
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\ifind\obj\Debug\ifind.csprojResolveAssemblyReference.cache
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\ifind\obj\Debug\ifind.dll.licenses
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\ifind\obj\Debug\RdlCompile.cache
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\ifind\obj\Debug\RdlCompile.compiled
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\ifind\obj\Debug\ifind.dll
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\ifind\obj\Debug\ifind.pdb

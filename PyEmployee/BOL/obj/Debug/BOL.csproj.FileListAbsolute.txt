@@ -1,0 +1,54 @@
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\BOL\bin\Debug\BOL.dll.config
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\BOL\bin\Debug\BOL.dll
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\BOL\bin\Debug\BOL.pdb
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\BOL\bin\Debug\EntityFramework.dll
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\BOL\bin\Debug\EntityFramework.SqlServer.dll
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\BOL\bin\Debug\GridMvc.dll
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\BOL\bin\Debug\EntityFramework.xml
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\BOL\bin\Debug\EntityFramework.SqlServer.xml
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\BOL\obj\Debug\BOL.dll
+E:\Work\Oldwork\ifindProject 16-9-2015\ifind\BOL\obj\Debug\BOL.pdb
+M:\eisa\FKRA_Soft\ifindProject 16-9-2015\ifind\BOL\bin\Debug\BOL.dll.config
+M:\eisa\FKRA_Soft\ifindProject 16-9-2015\ifind\BOL\bin\Debug\BOL.dll
+M:\eisa\FKRA_Soft\ifindProject 16-9-2015\ifind\BOL\bin\Debug\BOL.pdb
+M:\eisa\FKRA_Soft\ifindProject 16-9-2015\ifind\BOL\bin\Debug\EntityFramework.dll
+M:\eisa\FKRA_Soft\ifindProject 16-9-2015\ifind\BOL\bin\Debug\EntityFramework.SqlServer.dll
+M:\eisa\FKRA_Soft\ifindProject 16-9-2015\ifind\BOL\bin\Debug\GridMvc.dll
+M:\eisa\FKRA_Soft\ifindProject 16-9-2015\ifind\BOL\bin\Debug\EntityFramework.xml
+M:\eisa\FKRA_Soft\ifindProject 16-9-2015\ifind\BOL\bin\Debug\EntityFramework.SqlServer.xml
+M:\eisa\FKRA_Soft\ifindProject 16-9-2015\ifind\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+M:\eisa\FKRA_Soft\ifindProject 16-9-2015\ifind\BOL\obj\Debug\BOL.dll
+M:\eisa\FKRA_Soft\ifindProject 16-9-2015\ifind\BOL\obj\Debug\BOL.pdb
+M:\eisa\FKRA_Soft\PyEmployee\PyEmployee\BOL\bin\Debug\BOL.dll.config
+M:\eisa\FKRA_Soft\PyEmployee\PyEmployee\BOL\bin\Debug\BOL.dll
+M:\eisa\FKRA_Soft\PyEmployee\PyEmployee\BOL\bin\Debug\BOL.pdb
+M:\eisa\FKRA_Soft\PyEmployee\PyEmployee\BOL\bin\Debug\EntityFramework.dll
+M:\eisa\FKRA_Soft\PyEmployee\PyEmployee\BOL\bin\Debug\EntityFramework.SqlServer.dll
+M:\eisa\FKRA_Soft\PyEmployee\PyEmployee\BOL\bin\Debug\GridMvc.dll
+M:\eisa\FKRA_Soft\PyEmployee\PyEmployee\BOL\bin\Debug\EntityFramework.xml
+M:\eisa\FKRA_Soft\PyEmployee\PyEmployee\BOL\bin\Debug\EntityFramework.SqlServer.xml
+M:\eisa\FKRA_Soft\PyEmployee\PyEmployee\BOL\obj\Debug\BOL.dll
+M:\eisa\FKRA_Soft\PyEmployee\PyEmployee\BOL\obj\Debug\BOL.pdb
+E:\خاص\فكره للبرمجيات\PyEmployee\PyEmployee\BOL\bin\Debug\BOL.dll.config
+E:\خاص\فكره للبرمجيات\PyEmployee\PyEmployee\BOL\bin\Debug\BOL.dll
+E:\خاص\فكره للبرمجيات\PyEmployee\PyEmployee\BOL\bin\Debug\BOL.pdb
+E:\خاص\فكره للبرمجيات\PyEmployee\PyEmployee\BOL\bin\Debug\EntityFramework.dll
+E:\خاص\فكره للبرمجيات\PyEmployee\PyEmployee\BOL\bin\Debug\EntityFramework.SqlServer.dll
+E:\خاص\فكره للبرمجيات\PyEmployee\PyEmployee\BOL\bin\Debug\GridMvc.dll
+E:\خاص\فكره للبرمجيات\PyEmployee\PyEmployee\BOL\bin\Debug\EntityFramework.xml
+E:\خاص\فكره للبرمجيات\PyEmployee\PyEmployee\BOL\bin\Debug\EntityFramework.SqlServer.xml
+E:\خاص\فكره للبرمجيات\PyEmployee\PyEmployee\BOL\obj\Debug\BOL.dll
+E:\خاص\فكره للبرمجيات\PyEmployee\PyEmployee\BOL\obj\Debug\BOL.pdb
+M:\PyEmployes\PyEmployee\BOL\bin\Debug\BOL.dll.config
+M:\PyEmployes\PyEmployee\BOL\bin\Debug\BOL.dll
+M:\PyEmployes\PyEmployee\BOL\bin\Debug\BOL.pdb
+M:\PyEmployes\PyEmployee\BOL\bin\Debug\EntityFramework.dll
+M:\PyEmployes\PyEmployee\BOL\bin\Debug\EntityFramework.SqlServer.dll
+M:\PyEmployes\PyEmployee\BOL\bin\Debug\GridMvc.dll
+M:\PyEmployes\PyEmployee\BOL\bin\Debug\EntityFramework.xml
+M:\PyEmployes\PyEmployee\BOL\bin\Debug\EntityFramework.SqlServer.xml
+M:\PyEmployes\PyEmployee\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+M:\PyEmployes\PyEmployee\BOL\obj\Debug\BOL.dll
+M:\PyEmployes\PyEmployee\BOL\obj\Debug\BOL.pdb
+M:\PyEmployes\PyEmployee\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache

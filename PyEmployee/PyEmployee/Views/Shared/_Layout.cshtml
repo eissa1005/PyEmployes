@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>
+        نظـام إدارة الموارد البشرية -  شركة فكرة للبرمجيات
+    </title>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    @using BOL;
+    @using BLL;
+
+
+
+    @{
+        <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript">
+            var Dropvalue = "";
+            $(document).ready(function () {
+                $('#Dropid').empty();
+                $('#Dropid').change(function () {
+                    $(this).each(function (index, row) {
+                        Dropvalue = row.data.themes;
+                    });
+                });
+                var value = $('.dropdown').val(thems);
+                $('#dplid').val(value);
+            });
+        </script>
+
+    }
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("FKRA", "Index", "Home", new { Area = "Common" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active">@Html.ActionLink("Home", "Index", "Home", new { area = "Common" }, new { @class = "navbar-brand" })</li>
+
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            if (User.IsInRole("A"))
+                            {
+                                <li>@Html.ActionLink("Employees", "Index", new { Controller = "Employees", Area = "Admin" })</li>
+                                <li>@Html.ActionLink("ListUsers", "Index", new { Controller = "ListUsers", Area = "Admin" })</li>
+                                <li>@Html.ActionLink("ListEmployees", "Index", new { Controller = "ListEmployees", Area = "Admin" })</li>
+                                <li>@Html.ActionLink("Query", "Index", new { Controller = "Query", Area = "Admin" })</li>
+                            }
+                            if (User.IsInRole("A") || (User.IsInRole("U")))
+                            {
+                                <li>@Html.ActionLink("RecordInOut", "Index", new { Controller = "PyInOut", Area = "Users" })</li>
+                                <li>@Html.ActionLink("SignOut", "SignOut", new { Controller = "Login", Area = "Security" })</li>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="Dropid" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" id="#btn">
+                                        @{
+                                PYEmployeeEntities db = new PYEmployeeEntities();
+                                var Pyuser = db.tbl_User.ToList();
+                                foreach (var item in Pyuser)
+                                {
+                                    if (User.Identity.Name == item.UserName)
+                                    {
+                                        <li><a href="#">Default</a></li>
+                                            <li><a href="#">@item.Themes</a></li>
+                                        string themes = item.Themes.ToLower().ToString();
+
+
+                                        switch (themes)
+                                        {
+                                            case "cerulean":
+                                                if (Session["Lang"] != null && Session["Lang"] != "")
+                                                {
+                                                    if (Session["Lang"] == "Ar")
+                                                    {
+
+                                                        <link href="~/css/bootstrap-rtl.min.css" rel="stylesheet" />
+                                                        <link href="~/css/bootstrap-rtl.css" rel="stylesheet" />
+                                                        <link href="~/Themes/Cerulean/bootstrap.css" rel="stylesheet" />
+                                                        <link href="~/Themes/Cerulean/bootstrap.min.css" rel="stylesheet" />
+                                                    }
+                                                }
+                                                else
+                                                {
+
+                                                    <link href="~/Themes/Cerulean/bootstrap.css" rel="stylesheet" />
+                                                    <link href="~/Themes/Cerulean/bootstrap.min.css" rel="stylesheet" />
+                                                }
+
+                                                break;
+
+                                            case "paper":
+                                                if (Session["Lang"] != null && Session["Lang"] != "")
+                                                {
+                                                    if (Session["Lang"] == "Ar")
+                                                    {
+                                                        <link href="~/css/bootstrap-rtl.min.css" rel="stylesheet" />
+                                                        <link href="~/css/bootstrap-rtl.css" rel="stylesheet" />
+                                                        <link href="~/Themes/Paper/bootstrap.css" rel="stylesheet" />
+                                                        <link href="~/Themes/Paper/bootstrap.min.css" rel="stylesheet" />
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    <link href="~/Themes/Paper/bootstrap.css" rel="stylesheet" />
+                                                    <link href="~/Themes/Paper/bootstrap.min.css" rel="stylesheet" />
+                                                }
+                                                break;
+
+                                            case "simplex":
+                                                if (Session["Lang"] != null && Session["Lang"] != "")
+                                                {
+                                                    if (Session["Lang"] == "Ar")
+                                                    {
+                                                        <link href="~/css/bootstrap-rtl.min.css" rel="stylesheet" />
+                                                        <link href="~/css/bootstrap-rtl.css" rel="stylesheet" />
+                                                        <link href="~/Themes/Simplex/bootstrap.css" rel="stylesheet" />
+                                                        <link href="~/Themes/Simplex/bootstrap.min.css" rel="stylesheet" />
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    <link href="~/Themes/Simplex/bootstrap.css" rel="stylesheet" />
+                                                    <link href="~/Themes/Simplex/bootstrap.min.css" rel="stylesheet" />
+                                                }
+                                                break;
+
+                                            case "slate":
+                                                if (Session["Lang"] != null && Session["Lang"] != "")
+                                                {
+                                                    if (Session["Lang"] == "Ar")
+                                                    {
+                                                        <link href="~/css/bootstrap-rtl.min.css" rel="stylesheet" />
+                                                        <link href="~/css/bootstrap-rtl.css" rel="stylesheet" />
+                                                        <link href="~/Themes/slate/bootstrap.css" rel="stylesheet" />
+                                                        <link href="~/Themes/slate/bootstrap.min.css" rel="stylesheet" />
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    <link href="~/Themes/slate/bootstrap.css" rel="stylesheet" />
+                                                    <link href="~/Themes/slate/bootstrap.min.css" rel="stylesheet" />
+                                                }
+                                                break;
+
+                                            case "superhero":
+                                                if (Session["Lang"] != null && Session["Lang"] != "")
+                                                {
+                                                    if (Session["Lang"] == "Ar")
+                                                    {
+                                                        <link href="~/css/bootstrap-rtl.min.css" rel="stylesheet" />
+                                                        <link href="~/css/bootstrap-rtl.css" rel="stylesheet" />
+                                                        <link href="~/Themes/superhero/bootstrap.css" rel="stylesheet" />
+                                                        <link href="~/Themes/superhero/bootstrap.min.css" rel="stylesheet" />
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    <link href="~/Themes/superhero/bootstrap.css" rel="stylesheet" />
+                                                    <link href="~/Themes/superhero/bootstrap.min.css" rel="stylesheet" />
+                                                }
+                                                break;
+
+                                            case "united":
+                                                if (Session["Lang"] != null && Session["Lang"] != "")
+                                                {
+                                                    if (Session["Lang"] == "Ar")
+                                                    {
+                                                        <link href="~/css/bootstrap-rtl.min.css" rel="stylesheet" />
+                                                        <link href="~/css/bootstrap-rtl.css" rel="stylesheet" />
+                                                        <script src="~/Scripts/bootstrap.min.js"></script>
+                                                        <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    <script src="~/Scripts/bootstrap.min.js"></script>
+                                                    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+                                                }
+
+                                                break;
+
+                                            case "flatly":
+                                                if (Session["Lang"] != null && Session["Lang"] != "")
+                                                {
+                                                    if (Session["Lang"] == "Ar")
+                                                    {
+                                                        <link href="~/css/bootstrap-rtl.min.css" rel="stylesheet" />
+                                                        <link href="~/css/bootstrap-rtl.css" rel="stylesheet" />
+
+                                                        <link href="~/Themes/flatly/bootstrap.css" rel="stylesheet" />
+                                                        <link href="~/Themes/flatly/bootstrap.min.css" rel="stylesheet" />
+                                                    }
+                                                }
+                                                else
+                                                {
+
+                                                    <link href="~/Themes/flatly/bootstrap.css" rel="stylesheet" />
+                                                    <link href="~/Themes/flatly/bootstrap.min.css" rel="stylesheet" />
+                                                }
+                                                break;
+
+                                            case "journal":
+                                                if (Session["Lang"] != null && Session["Lang"] != "")
+                                                {
+                                                    if (Session["Lang"] == "Ar")
+                                                    {
+                                                        <link href="~/css/bootstrap-rtl.min.css" rel="stylesheet" />
+                                                        <link href="~/css/bootstrap-rtl.css" rel="stylesheet" />
+                                                        <link href="~/Themes/journal/bootstrap.css" rel="stylesheet" />
+                                                        <link href="~/Themes/journal/bootstrap.min.css" rel="stylesheet" />
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    <link href="~/Themes/journal/bootstrap.css" rel="stylesheet" />
+                                                    <link href="~/Themes/journal/bootstrap.min.css" rel="stylesheet" />
+
+                                                }
+                                                break;
+                                            case "cyborg":
+                                                if (Session["Lang"] != null && Session["Lang"] != "")
+                                                {
+                                                    if (Session["Lang"] == "Ar")
+                                                    {
+                                                        <link href="~/css/bootstrap-rtl.min.css" rel="stylesheet" />
+                                                        <link href="~/css/bootstrap-rtl.css" rel="stylesheet" />
+
+                                                        <link href="~/Themes/cyborg/bootstrap.css" rel="stylesheet" />
+                                                        <link href="~/Themes/cyborg/bootstrap.min.css" rel="stylesheet" />
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    <link href="~/Themes/cyborg/bootstrap.css" rel="stylesheet" />
+                                                    <link href="~/Themes/cyborg/bootstrap.min.css" rel="stylesheet" />
+                                                }
+                                                break;
+
+                                                default:
+                                                if (Session["Lang"] != null && Session["Lang"] != "")
+                                                {
+                                                    if (Session["Lang"] == "Ar")
+                                                    {
+                                                        <link href="~/css/bootstrap-rtl.min.css" rel="stylesheet" />
+                                                        <link href="~/css/bootstrap-rtl.css" rel="stylesheet" />
+                                                        <link href="~/Themes/slate/bootstrap.css" rel="stylesheet" />
+                                                        <link href="~/Themes/slate/bootstrap.min.css" rel="stylesheet" />
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    <link href="~/Themes/slate/bootstrap.css" rel="stylesheet" />
+                                                    <link href="~/Themes/slate/bootstrap.min.css" rel="stylesheet" />
+                                                }
+                                                break;
+                                                @*default:
+                                                    <script src="~/Scripts/bootstrap.min.js"></script>
+                                                    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+                                                        break;*@
+                                        }
+
+                                    }
+                                }
+                                        }
+                                    </ul>
+                                </li>
+
+                                <li><a href="#"> Welcome Mr/Mrs <b>@User.Identity.Name</b> </a></li>
+                            }
+
+                        }
+                        else
+                        {
+                            <li>@Html.ActionLink("Register", "Index", new { Controller = "Register", Area = "Security" })</li>
+                            <li>@Html.ActionLink("Login", "Index", new { Controller = "Login", Area = "Security" })</li>
+                        }
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <blockquote class="pull-right">
+                <p> My Saying  goes here </p>
+            </blockquote>
+            <p> Copy Right &copy;@DateTime.Now.Year - FEKRA </p>
+        </footer>
+    </div>
+</body>
+</html>

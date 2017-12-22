@@ -1,0 +1,138 @@
+﻿@model IEnumerable<BOL.tbl_Employees>
+@{
+    try
+    {
+        if (Session["Lang"] != null && Session["Lang"].ToString() != "")
+        {
+            string Lang = Session["Lang"].ToString();
+
+
+            if (Lang == "Ar")
+            {
+                Layout = "~/Views/Shared/_Layout_AR.cshtml";
+            }
+
+            else
+            {
+                Layout = "~/Views/Shared/_Layout.cshtml";
+            }
+        }
+    }
+    catch (Exception)
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+
+}
+<h2><b>قائمة الموظفين</b></h2>
+<link href="~/css/bootstrap-rtl.css" rel="stylesheet" />
+<link href="~/css/bootstrap-rtl.min.css" rel="stylesheet" />
+<link href="~/css/innerpage.css" rel="stylesheet" />
+<link href="~/css/jquery-ui-1.9.2.custom.css" rel="stylesheet" />
+<link href="~/css/jquery-ui-1.9.2.custom.min.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-2.1.4.min.js"></script>
+<script src="~/js/jquery-ui-1.9.2.custom.js"></script>
+<script src="~/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script type="text/javascript"></script>
+<script>
+    $(document).ready(function () {
+        $('.close').click(function () {
+            $('#alert').hide(2000);
+        });
+
+        // Message Confirm Edit
+        $('#edit').click(function (event) {
+            if (confirm('Are You Sure Edite this Record'))
+                return true;
+            else
+                return false;
+        });
+
+        // Message Confirm Delete
+        $('#delete').click(function (event) {
+            if (confirm('Are You Sure delete this Record'))
+                return true;
+            else
+                return false;
+        });
+    });
+</script>
+
+
+@using (Html.BeginForm("Delete", "ListEmployees", new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <table class="table table-hover table-bordered">
+        <tr>
+            <th>
+                @Html.ActionLink("رقم الموظف", "Index", new { SortOrder = (ViewBag.SortOrder == null ? "ASC" : (ViewBag.SortOrder == "ASC" ? "Desc" : "ASC")), SortBy = "EmployeeId" })
+            </th>
+            <th>
+                @Html.ActionLink("اسم الموظف", "Index", new { SortOrder = (ViewBag.SortOrder == null ? "ASC" : (ViewBag.SortOrder == "ASC" ? "Desc" : "ASC")), SortBy = "Employee_Name" })
+            </th>
+            <th>
+                @Html.ActionLink("الكفيل", "Index", new { SortOrder = (ViewBag.SortOrder == null ? "ASC" : (ViewBag.SortOrder == "ASC" ? "Desc" : "ASC")), SortBy = "Guarantor" })
+            </th>
+            <th>
+                @Html.Label("الجوال", htmlAttributes: new { @class = "control-label col-md-2" })
+            </th>
+            <th>
+                @Html.Label("صورة شخصية", htmlAttributes: new { @class = "control-label col-md-2" })
+            </th>
+            <th>
+                @Html.ActionLink("تاريخ التعيين", "Index", new { SortOrder = (ViewBag.SortOrder == null ? "ASC" : (ViewBag.SortOrder == "ASC" ? "Desc" : "ASC")), SortBy = "HireDate" })
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmployeeId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Employee_Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Guarantor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Mobile)
+                </td>
+                <td style="width:100px;height:100px;">
+                    <input type="image" src="~/@item.EmplyeeImg" style="width:120px;height:120px;" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HireDate)
+                </td>
+                <td>
+                    @Html.ActionLink("تعديل", "Edit", new { id = item.ID }, new { id = "edit" }) |
+                    @Html.ActionLink("حذف", "Delete", "ListEmployees", new { id = item.ID }, new { id = "delete" })
+                </td>
+            </tr>
+        }
+
+    </table>
+}
+@{
+    double page = ViewBag.TotalPages;
+}
+<ul class="pagination">
+    @for (int i = 1; i <= page; i++)
+    {
+        
+            if (i == ViewBag.TotalPages)
+            {
+                <li>@Html.ActionLink(i.ToString() + " ", "index", new { SortOrder = (ViewBag.SortOrder == null ? "ASC" : "Desc"), SortBy = "Employee_Name", Page = i })</li>
+            }
+            else
+            {
+                <li>@Html.ActionLink(i.ToString() + " ", "index", new { SortOrder = (ViewBag.SortOrder == null ? "ASC" : "Desc"), SortBy = "Employee_Name", Page = i })</li>
+            }
+        
+    }
+
+</ul>
